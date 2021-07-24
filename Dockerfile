@@ -1,4 +1,3 @@
-FROM alpine:3.6
+FROM alpine:3.14
 
-RUN apk --update add postgresql-client && \
-  rm -rf /var/cache/apk/*
+RUN apk --update --no-cache add postgresql-client
